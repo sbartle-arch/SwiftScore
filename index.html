@@ -14,14 +14,14 @@
             background-color: #f7f9fb; /* Light background for contrast */
             scroll-behavior: smooth;
         }
-        /* Custom gradient for the hero section button */
+        /* Custom gradient for the hero section button (now red) */
         .hero-btn-gradient {
-            background-image: linear-gradient(to right, #1d4ed8, #0ea5e9);
+            background-image: linear-gradient(to right, #b91c1c, #f87171); /* Red Gradient */
             transition: transform 0.2s;
         }
         .hero-btn-gradient:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(30, 64, 175, 0.4);
+            box-shadow: 0 4px 15px rgba(185, 28, 28, 0.4); /* Red Shadow */
         }
     </style>
 </head>
@@ -31,13 +31,13 @@
     <header class="bg-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <!-- Logo/Company Name -->
-            <div class="text-2xl font-extrabold text-blue-700 tracking-tight">
-                Swift<span class="text-sky-500">Score</span>
+            <div class="text-2xl font-extrabold text-red-700 tracking-tight">
+                Swift<span class="text-rose-500">Score</span>
             </div>
             <!-- Navigation Links -->
             <nav class="space-x-4">
-                <a href="#features" class="text-gray-600 hover:text-blue-700 transition duration-150 hidden sm:inline">Features</a>
-                <a href="#inquiry" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition duration-150 shadow-md">
+                <a href="#features" class="text-gray-600 hover:text-red-700 transition duration-150 hidden sm:inline">Features</a>
+                <a href="#inquiry" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition duration-150 shadow-md">
                     Pricing Inquiry
                 </a>
             </nav>
@@ -69,21 +69,21 @@
                     
                     <!-- Feature 1: Speed -->
                     <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition duration-300">
-                        <div class="text-4xl text-blue-600 mb-4">🚀</div>
+                        <div class="text-4xl text-red-600 mb-4">🚀</div>
                         <h3 class="text-xl font-semibold mb-3">Lightning-Fast Grading</h3>
                         <p class="text-gray-600">Cut grading time by up to 90%. Our AI processes essays, exams, and reports in seconds, not hours, giving you your time back.</p>
                     </div>
 
                     <!-- Feature 2: Accuracy -->
                     <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition duration-300">
-                        <div class="text-4xl text-sky-500 mb-4">🧠</div>
+                        <div class="text-4xl text-rose-500 mb-4">🧠</div>
                         <h3 class="text-xl font-semibold mb-3">Bias-Free Consistency</h3>
                         <p class="text-gray-600">Ensure fair and consistent assessment for every student. Our models are trained for maximum objectivity across subjects and disciplines.</p>
                     </div>
 
                     <!-- Feature 3: Actionable Feedback -->
                     <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition duration-300">
-                        <div class="text-4xl text-indigo-600 mb-4">📝</div>
+                        <div class="text-4xl text-pink-600 mb-4">📝</div>
                         <h3 class="text-xl font-semibold mb-3">Deep Student Insights</h3>
                         <p class="text-gray-600">Beyond the score, SwiftScore identifies key areas for improvement, providing personalized, targeted feedback for student growth.</p>
                     </div>
@@ -92,7 +92,7 @@
         </section>
         
         <!-- Pricing Inquiry Section (The required component) -->
-        <section id="inquiry" class="py-16 md:py-24 bg-gradient-to-r from-blue-700 to-sky-600">
+        <section id="inquiry" class="py-16 md:py-24 bg-gradient-to-r from-red-700 to-rose-600">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="bg-white p-8 md:p-12 rounded-2xl shadow-2xl text-center">
                     <h2 class="text-4xl font-bold mb-4 text-gray-800">Find Your Perfect Grading Plan</h2>
@@ -105,25 +105,25 @@
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700">Your Full Name</label>
                             <input type="text" id="name" name="name" required
-                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-150"
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500 transition duration-150"
                                 placeholder="Jane Doe">
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-700">Work Email Address</label>
                             <input type="email" id="email" name="email" required
-                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-150"
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500 transition duration-150"
                                 placeholder="jane.doe@institution.edu">
                         </div>
                         <div>
                             <label for="institution" class="block text-sm font-medium text-gray-700">Institution Name & Type (e.g., High School, University, Tutoring Center)</label>
                             <input type="text" id="institution" name="institution" required
-                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-150"
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500 transition duration-150"
                                 placeholder="State University">
                         </div>
                         <div>
                             <label for="needs" class="block text-sm font-medium text-gray-700">Describe Your Grading Needs and Student Volume</label>
                             <textarea id="needs" name="needs" rows="4" required
-                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-150"
+                                class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500 transition duration-150"
                                 placeholder="We need to grade approximately 5,000 essays per semester in English and History."></textarea>
                         </div>
                         
@@ -131,7 +131,7 @@
                         <p id="statusMessage" class="hidden text-center font-medium pt-2"></p>
 
                         <button type="submit"
-                            class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-md text-lg font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150">
+                            class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-md text-lg font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition duration-150">
                             Submit Inquiry
                         </button>
                     </form>
@@ -144,11 +144,11 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="text-xl font-bold mb-4">Swift<span class="text-sky-400">Score</span></div>
+            <div class="text-xl font-bold mb-4">Swift<span class="text-rose-400">Score</span></div>
             <nav class="space-x-4 mb-4 text-sm">
-                <a href="#" class="hover:text-sky-400 transition duration-150">Terms of Service</a>
-                <a href="#" class="hover:text-sky-400 transition duration-150">Privacy Policy</a>
-                <a href="mailto:info@swiftscore.com" class="hover:text-sky-400 transition duration-150">Contact Us</a>
+                <a href="#" class="hover:text-rose-400 transition duration-150">Terms of Service</a>
+                <a href="#" class="hover:text-rose-400 transition duration-150">Privacy Policy</a>
+                <a href="mailto:info@swiftscore.com" class="hover:text-rose-400 transition duration-150">Contact Us</a>
             </nav>
             <p class="text-sm text-gray-400 mt-6">&copy; 2025 SwiftScore, LLC. All rights reserved. AI Grading Solutions.</p>
         </div>
@@ -209,8 +209,8 @@
 
                     // Display success message and reset form
                     statusMessage.textContent = generatedText;
-                    statusMessage.classList.remove('hidden', 'text-red-500');
-                    statusMessage.classList.add('text-green-600');
+                    statusMessage.classList.remove('hidden', 'text-red-500'); // Remove error color if present
+                    statusMessage.classList.add('text-red-600'); // Use red for success message
                     form.reset();
 
                 } catch (error) {
@@ -223,8 +223,8 @@
                         // Final failure message after max retries
                         console.error('API call failed after multiple retries:', error);
                         statusMessage.textContent = 'Oops! There was an issue submitting your request. Please try again or email us directly at info@swiftscore.com.';
-                        statusMessage.classList.remove('hidden', 'text-green-600');
-                        statusMessage.classList.add('text-red-500');
+                        statusMessage.classList.remove('hidden', 'text-red-600'); // Remove success color if present
+                        statusMessage.classList.add('text-red-500'); // Use red for error message
                     }
                 } finally {
                     // Reset button state
